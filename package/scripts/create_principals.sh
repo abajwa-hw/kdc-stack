@@ -49,8 +49,9 @@ function create_principals {
      ssh -o StrictHostKeyChecking=no -f root@$node chmod $perm $kt_path
  
   done < $p_file
+
+  rm -rf p_output
 }
- rm -rf p_output
 
 ##########################################
 #		            MAIN
